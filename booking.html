@@ -171,158 +171,160 @@
                   </div>
 
                   <form
-                    name="bookingForm"
-                    id="booking_form"
-                    method="post"
-                    action="booking.php"
-                  >
-                    <div class="row g-4">
-                      <div class="col-lg-12">
-                        <h3 class="mb-3">
-                          <i class="fa fa-envelope-o id-color me-2"></i> Book
-                          Your Appointment
-                        </h3>
-                        <p>
-                          Book your appointment today for expert dental care
-                          tailored to your needs. Healthy, beautiful smiles
-                          start with a simple step, schedule now!
-                        </p>
-                        <div class="relative">
-                          <select
-                            name="service"
-                            id="service"
-                            class="form-control"
-                          >
-                            <option disabled selected value>
-                              Select Service
-                            </option>
-                            <option value="General Dentistry">
-                              General Dentistry
-                            </option>
-                            <option value="Cosmetic Dentistry">
-                              Cosmetic Dentistry
-                            </option>
-                            <option value="Pediatric Dentistry">
-                              Pediatric Dentistry
-                            </option>
-                            <option value="Restorative Dentistry">
-                              Restorative Dentistry
-                            </option>
-                            <option value="Preventive Dentistry">
-                              Preventive Dentistry
-                            </option>
-                            <option value="Orthodontics">Orthodontics</option>
-                          </select>
-                          <i
-                            class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down"
-                          ></i>
-                        </div>
-                      </div>
+    name="bookingForm"
+    id="booking_form"
+    method="post"
+    action="booking.php"
+>
+    <div class="row g-4">
+        <div class="col-lg-12">
+            <h3 class="mb-3">
+                <i class="fa fa-envelope-o id-color me-2"></i> Book
+                Your Appointment
+            </h3>
+            <p>
+                Book your appointment today for expert dental care
+                tailored to your needs. Healthy, beautiful smiles
+                start with a simple step, schedule now!
+            </p>
+            <div class="relative">
+                <select
+                    name="service"
+                    id="service"
+                    class="form-control"
+                    required
+                >
+                    <option disabled selected value>
+                        Select Service
+                    </option>
+                    <option value="General Dentistry">
+                        General Dentistry
+                    </option>
+                    <option value="Cosmetic Dentistry">
+                        Cosmetic Dentistry
+                    </option>
+                    <option value="Pediatric Dentistry">
+                        Pediatric Dentistry
+                    </option>
+                    <option value="Restorative Dentistry">
+                        Restorative Dentistry
+                    </option>
+                    <option value="Preventive Dentistry">
+                        Preventive Dentistry
+                    </option>
+                    <option value="Orthodontics">Orthodontics</option>
+                </select>
+                <i
+                    class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down"
+                ></i>
+            </div>
+        </div>
 
-                      <div class="col-lg-6">
-                        <div
-                          id="date"
-                          class="relative input-group date"
-                          data-date-format="mm-dd-yyyy"
-                        >
-                          <i
-                            class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-calendar"
-                          ></i>
-                          <input
-                            class="form-control"
-                            value="Select Date"
-                            name="date"
-                            type="text"
-                          />
-                          <span class="input-group-addon"
-                            ><i class="glyphicon glyphicon-calendar"></i
-                          ></span>
-                        </div>
-                      </div>
+        <div class="col-lg-6">
+            <div
+                id="date"
+                class="relative input-group date"
+                data-date-format="mm-dd-yyyy"
+            >
+                <i
+                    class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-calendar"
+                ></i>
+                <input
+                    class="form-control"
+                    value="Select Date"
+                    name="date"
+                    type="text"
+                    required
+                />
+                <span class="input-group-addon"
+                    ><i class="glyphicon glyphicon-calendar"></i
+                ></span>
+            </div>
+        </div>
 
-                      <div class="col-lg-6">
-                        <div class="relative">
-                          <select name="time" id="time" class="form-control">
-                            <option disabled selected value>Select Time</option>
-                            <option value="10:00">10:00</option>
-                            <option value="11:00">11:00</option>
-                            <option value="12:00">12:00</option>
-                            <option value="13:00">13:00</option>
-                            <option value="14:00">14:00</option>
-                            <option value="15:00">15:00</option>
-                            <option value="16:00">16:00</option>
-                            <option value="17:00">17:00</option>
-                            <option value="18:00">18:00</option>
-                            <option value="19:00">19:00</option>
-                            <option value="20:00">20:00</option>
-                          </select>
-                          <i
-                            class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down"
-                          ></i>
-                        </div>
-                      </div>
+        <div class="col-lg-6">
+            <div class="relative">
+                <select name="time" id="time" class="form-control" required>
+                    <option disabled selected value>Select Time</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                </select>
+                <i
+                    class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down"
+                ></i>
+            </div>
+        </div>
 
-                      <div class="col-lg-4">
-                        <input
-                          type="text"
-                          name="name"
-                          id="name"
-                          placeholder="Name"
-                          class="form-control"
-                          placeholder=""
-                          required
-                        />
-                      </div>
+        <div class="col-lg-4">
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                class="form-control"
+                required
+            />
+        </div>
 
-                      <div class="col-lg-4">
-                        <input
-                          type="text"
-                          name="email"
-                          id="email"
-                          placeholder="Email"
-                          class="form-control"
-                          placeholder=""
-                          required
-                        />
-                      </div>
+        <div class="col-lg-4">
+            <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="form-control"
+                required
+            />
+        </div>
 
-                      <div class="col-lg-4">
-                        <input
-                          type="text"
-                          name="phone"
-                          id="phone"
-                          placeholder="Phone"
-                          class="form-control"
-                          placeholder=""
-                          required
-                        />
-                      </div>
+        <div class="col-lg-4">
+            <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Phone"
+                class="form-control"
+                required
+            />
+        </div>
 
-                      <div class="col-lg-12">
-                        <textarea
-                          name="message"
-                          id="message"
-                          class="form-control"
-                          placeholder="Message"
-                        ></textarea>
-                      </div>
+        <div class="col-lg-12">
+            <textarea
+                name="message"
+                id="message"
+                class="form-control"
+                placeholder="Message (optional)"
+            ></textarea>
+        </div>
 
-                      <div class="col-lg-12">
-                        <div id="submit">
-                          <input
-                            type="submit"
-                            id="send_message"
-                            value="Send Appointment"
-                            class="btn-main"
-                          />
-                        </div>
-                      </div>
-                    </div>
+        <div class="col-lg-12">
+            <div id="submit">
+                <input
+                    type="submit"
+                    id="send_message"
+                    value="Send Appointment"
+                    class="btn-main"
+                />
+            </div>
+        </div>
+    </div>
 
-                    <div id="error_message" class="error">
-                      Sorry there was an error sending your form.
-                    </div>
-                  </form>
+    <div id="success_message" class="success">
+        Your appointment request has been sent successfully. We will contact you soon.
+    </div>
+    <div id="error_message" class="error">
+        Sorry, there was an error sending your appointment request. Please try again.
+    </div>
+</form>
                 </div>
               </div>
 
