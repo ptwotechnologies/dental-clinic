@@ -1,7 +1,7 @@
 <?php
 
 // Define recipient email and subject
-$to = 'grinsdenta1065@gmail.com';
+$to = 'grinsdental065@gmail.com';
 $subject = 'New Dental Appointment Request';
 
 // Sanitize and validate input
